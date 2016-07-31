@@ -15,6 +15,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
+apply plugin: 'war'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -32,6 +33,7 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 	compile("org.springframework.boot:spring-boot-devtools")
 	testCompile("junit:junit")
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
 
